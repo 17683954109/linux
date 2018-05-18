@@ -1,0 +1,21 @@
+
+
+//linux网络设置
+
+查看ip：
+ifconfig eth0 查看网卡标识为eth0的ip信息详情
+ifconfig 查看所有的ip信息
+
+ifconfig 内容简单介绍
+eth0 之类的是本地的网卡名
+lo 也就是本地主机，也叫本地回调Local Loop ,即localhost
+
+临时设置ip：
+ifconfig 网卡标识 要使用的ip地址
+例：ifconfig eth0 192.168.20.3
+
+永久设置ip:
+编辑配置文件：
+vi /etc/sysconfig/network-scripts/ifcfg-网卡名称
+修改里面的IPADDR为你需要的ip地址，修改子网掩码则NETMASK,修改广播地址则NETWORK
+修改完成后init 6 重启
