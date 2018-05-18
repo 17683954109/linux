@@ -8,19 +8,46 @@
  /root root用户的家目录
  
  //基本命令
+ init 0 关机
+ 
+ init 6 重启
+ 
  ls 列出当前文件夹下的内容
+ 
  pwd 当前所处的文件目录
+ 
  mkdir 创建文件夹
+ 
  touch 创建文件
+ 
  cd 切换目录
+ 
  rm 删除文件或文件夹
+ 
  mv 移动文件和重命名
+ 
  cp 复制文件
+ 
  vi 编辑文件：i 键为进入编辑（插入）,esc退出编辑模式，shift+: 输入命令，如wq即保存并退出
+ 
  tree 递归查看目录,以树状结构查看文件夹
+ 
  ifconfig 查看ip的配置详情
+ 
  iptables -L 查看防火墙
+ 
  deepin linux 的root方式：sudo su
+ 
  cat 查看文件内容
+ 
  mount 挂载，例如：mount /dev/cdrom /media 将光盘挂载到media目录下，以便查看内容
+ 
  help 获取帮助文档,包括一些命令及作用
+ 
+ find /-name 查找文件，后跟文件名
+ 
+ updatedb 创建一个索引
+ 
+ locate 检索文件名,必须要有updatedb才能检索
+ 
+ 
