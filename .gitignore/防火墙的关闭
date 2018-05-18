@@ -1,0 +1,15 @@
+
+
+//iptables:第一道防火墙
+
+查看：
+iptables -L
+
+清空：
+iptables -F
+然后保存防火墙设置，service iptables save
+
+//selinux：第二道防火墙
+
+vi /etc/selinux/config
+将其中的enabled改为disabled，然后重启init 6
