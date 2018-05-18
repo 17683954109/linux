@@ -50,4 +50,14 @@
  
  locate 检索文件名,必须要有updatedb才能检索
  
+ 递归创建目录：
  
+ 
+ mkdir -p dir1/dir2/dir3/...
+
+测试的创建多个目录：
+
+mkdir folder{1..100} //创建folder1...folder100
+
+
+
